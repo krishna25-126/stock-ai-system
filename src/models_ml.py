@@ -85,3 +85,8 @@ if __name__ == '__main__':
     results.append(evaluate_model('SVR', SVR(kernel='rbf', C=1.0, epsilon=0.001), X, y))
 
     leaderboard = pd.DataFrame(results).sort_values('MAE')
+    print("\n--- Leaderboard (sorted by MAE, lower is better) ---")
+    print(leaderboard.to_string(index=False))
+
+    leaderboard.to_csv('reports/ml_leaderboard.csv', index=False)
+    print("\nSaved to reports/ml_leaderboard.csv")
