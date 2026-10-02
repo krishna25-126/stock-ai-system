@@ -1,0 +1,15 @@
+pandas
+numpy
+yfinance
+pandas-datareader
+scikit-learn
+xgboost
+tensorflow
+transformers
+torch
+PyPortfolioOpt
+statsmodels
+scipy
+plotly
+streamlit
+python-dotenv

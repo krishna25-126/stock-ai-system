@@ -1,0 +1,7 @@
+universe: [AAPL, MSFT, JPM, XOM, JNJ, PG, NVDA, KO, CAT, HD]
+benchmark: "^GSPC"
+start_date: "2015-01-01"
+end_date: null          # null = today
+sequence_length: 60
+split: {train: 0.70, val: 0.15, test: 0.15}
+random_seed: 42
